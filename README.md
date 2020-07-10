@@ -29,6 +29,14 @@ The API is now available on your host at `http://localhost:3000`.
 Head to the [documentation](https://thecodingmachine.github.io/gotenberg)
 to learn how to interact with it!
 
+## To push on Cloud Run
+```bash
+make image
+docker tag thecodingmachine/gotenberg:snapshot gcr.io/[PROJECT]/gotenberg
+gcloud auth configure-docker
+docker push gcr.io/[PROJECT]/gotenberg
+```
+
 ## Badges
 
 [![Docker pulls](https://img.shields.io/docker/pulls/thecodingmachine/gotenberg)](https://hub.docker.com/r/thecodingmachine/gotenberg)
