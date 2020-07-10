@@ -31,10 +31,9 @@ to learn how to interact with it!
 
 ## To push on Cloud Run
 make image
-docker tag thecodingmachine/gotenberg:snapshot gcr.io/parapheur-api/gotenberg
-projectprod
+docker tag thecodingmachine/gotenberg:snapshot gcr.io/[PROJECT]/gotenberg
 gcloud auth configure-docker # If necessary
-docker push gcr.io/parapheur-api/gotenberg
+docker push gcr.io/[PROJECT]/gotenberg
 
 ## Badges
 
